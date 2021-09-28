@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  width: 46vw;
+  align-items: center;
+  margin: 6rem auto 0rem;
+  height: 100vh;
+}
+
+.heading {
+  font-size: 4.5rem;
+  font-weight: 900;
+  position: relative;
+  padding: 1.5rem;
+  &__underline {
+    height: 0;
+    width: 10rem;
+    position: absolute;
+    border-bottom: 3px solid var(--color-skyblue);
+    top: 100%;
+    left: 28%;
+  }
+}
+
+///// Review
+.review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.review {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 1rem 0px 5rem rgba(0, 0, 0, 0.2);
+  &__display {
+    &--img {
+      width: 12rem;
+      height: 12rem;
+      border-radius: 50%;
+      object-fit: cover;
+      outline: 2px solid var(--color-skyblue);
+    }
+  }
+  &__user {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    &--name {
+      font-size: 2rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      word-spacing: 1px;
+      text-transform: capitalize;
+    }
+    &--position {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      color: var(--color-skyblue);
+    }
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--color-grey);
+    line-height: 1.5;
+  }
+  &__button {
+    display: flex;
+    font-size: 3rem;
+    font-weight: 900;
+    gap: 3rem;
+    & > * {
+      color: var(--color-skyblue);
+      cursor: pointer;
+    }
+  }
+
+  &__surprise {
+    border: none;
+    color: var(--color-skyblue);
+    background-color: teal;
+    padding: 1rem 2rem;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.active {
+  display: flex;
+}
+.hidden {
+  display: none;
+}
